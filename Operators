@@ -1,0 +1,37 @@
+
+#include <stdio.h>
+#include <string.h>
+int a=10,b=5,c;
+  int reset()
+{
+    a=10;
+    b=5;
+    return 0;
+}
+int main() {
+    
+    printf("\\\\a=10, b=5\n\n");
+    printf("A  B  C\n");
+    
+    c=a++*--b;
+    printf("%i %i %i \\\\c=a++*--b\n",a,b,c);
+    reset();
+    
+    c=++a*++b;
+    printf("%i %i %i \\\\c=++a*++b\n",a,b,c);
+    reset();
+    
+    c=a--*b--;
+    printf("%i %i %i \\\\c=a--*b--\n",a,b,c);
+    reset();
+    
+    c=++a*b++;
+    printf("%i %i %i \\\\c=++a*b++\n",a,b,c);
+    reset();
+    
+    c=--a*++b;
+    printf("%i %i %i \\\\c=--a*++b\n",a,b,c);
+    return 0;
+}
+
+
